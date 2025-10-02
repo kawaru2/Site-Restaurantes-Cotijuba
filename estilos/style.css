@@ -6,7 +6,7 @@ body {
 
 .hero {
   height: 80vh;
-  background: url("/img/praia.jpg") no-repeat center center/cover;
+  background: url("../img/praia.jpg") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
