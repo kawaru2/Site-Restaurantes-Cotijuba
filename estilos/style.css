@@ -142,12 +142,14 @@ body {
 }
 
 .card-conteudo a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  background: #2d6a4f;
+  color: #fff;
   padding: 0.6rem 1rem;
   border-radius: 6px;
+  font-size: 0.9rem;
   transition: background 0.3s;
-  width: 15vw;
 }
 
 .card-conteudo a:hover {
@@ -182,11 +184,11 @@ footer {
   margin-top: 2rem;
 }
 
-@media(max-width: 600px){
-    .hero h1{
-        font-size: 1.8rem;
-    }
-    .hero p{
-        font-size: 1rem;
-    }
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
