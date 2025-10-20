@@ -2,6 +2,43 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #333;
+  transition: background .3s ease-in-out;
+  /* background-color: black; */
+  /*  PRECISO ADICIONAR UMA COR PRETA DIFERENTE PARA O MODO ESCURO  */
+}
+
+.btnDarkMode {
+  min-width: 80px;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: lightGray;
+  color: white;
+  z-index: 1;
+  transition: all ease-in-out .3s;
+}
+
+.circle {
+  min-width: 30px;
+  min-height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.eventBtn {
+  background-color: lightgreen;
+}
+
+.eventBtnCircle {
+  left: 40px;
 }
 
 .hero {
@@ -77,13 +114,14 @@ body {
   height: 450px;
 }
 
-.historia h2 {
+.subtitulo {
   font-size: 2rem;
   color: #2d6a4f;
   margin-bottom: 1rem;
+  transition: all ease-in-out .5s;
 }
 
-.historia p {
+.paragraph {
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
@@ -91,10 +129,11 @@ body {
 
 /*Restaurantes*/
 .restaurantes {
-  padding: 0 1rem;
+  padding: 30px 10px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
+  background-color: white;
 }
 
 .restaurantes h2 {
@@ -129,19 +168,19 @@ body {
   text-align: left;
 }
 
-.card-conteudo h3 {
+.nameRestaurant {
   margin: 0;
   font-size: 1.2rem;
   color: #2d6a4f;
 }
 
-.card-conteudo p {
+.infoRestaurant {
   font-size: 0.95rem;
   margin: 0.5rem 0 1rem;
   color: #555;
 }
 
-.card-conteudo a {
+.btn {
   display: inline-block;
   text-decoration: none;
   background: #2d6a4f;
@@ -169,19 +208,41 @@ body {
 
 .feature {
   max-width: 200px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.feature h4 {
-  margin: 0.5rem 0 0;
+.tittleFeature {
+  margin: 0.5rem 0;
   color: #2d6a4f;
 }
 
 footer {
-  background: #2d6a4f;
+  background-color: #2d6a4f;
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.black {
+  background-color: #0D0D0D;
+}
+
+.darkModeContrast {
+  background-color: #121212;
+}
+
+.darkModeMainText {
+  color: #EAEAEA;
+}
+
+.darkModeSecondaryText {
+  color: #B3B3B3;
+}
+
+.darkModeBorder {
+  border: #2A2A2A;
 }
 
 @media (max-width: 600px) {
