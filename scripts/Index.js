@@ -2,7 +2,7 @@
 
 const btn = document.querySelector(".btnDarkMode");
 
-function btnDarkMode() {
+export default function btnDarkMode() {
   const btnCircle = document.querySelector(".circle");
   btn.classList.toggle("eventBtn")
   btnCircle.classList.toggle("eventBtnCircle")
@@ -11,20 +11,23 @@ function btnDarkMode() {
 
 // UMA FUNÇÃO QUE EXECUTA O OBJETIVO DO DARK MODE (RENDERIZA)
 
-function renderDarkMode() {
-  const $body = document.querySelector("body");
-  const $sectionRestaurants = document.querySelector(".restaurantes");
-  const $card = document.querySelectorAll(".card");
-  const $features = document.querySelector(".features");
-  const $feature = document.querySelectorAll(".feature");
-  const $footer = document.querySelector("footer");
-  const $txtTittle = document.querySelector(".subtitulo");
-  const $paragraph = document.querySelector(".paragraph");
-  const $sectionRestaurantsTittle = document.querySelector(".restaurantes > h2");
-  const $nameRestaurant = document.querySelectorAll(".nameRestaurant");
-  const $infoRestaurant = document.querySelectorAll(".infoRestaurant");
-  const $tittleFeature = document.querySelectorAll(".tittleFeature");
-  const $infoFeature = document.querySelectorAll(".infoFeature");
+export function renderDarkMode() {
+
+  const [$body, $sectionRestaurants, $card, $features, $feature, $footer, $txtTittle, $paragraph, $sectionRestaurantsTittle, $nameRestaurant, $infoRestaurant, $tittleFeature, $infoFeature] = [
+    document.querySelector("body"),
+    document.querySelector(".restaurantes"),
+    document.querySelectorAll(".card"),
+    document.querySelector(".features"),
+    document.querySelectorAll(".feature"),
+    document.querySelector("footer"),
+    document.querySelector(".subtitulo"),
+    document.querySelector(".paragraph"),
+    document.querySelector(".restaurantes > h2"),
+    document.querySelectorAll(".nameRestaurant"),
+    document.querySelectorAll(".infoRestaurant"),
+    document.querySelectorAll(".tittleFeature"),
+    document.querySelectorAll(".infoFeature")
+  ]
   
   $body.classList.toggle("black")
   $sectionRestaurants.classList.toggle("darkModeContrast")
@@ -56,3 +59,6 @@ function renderDarkMode() {
 btn.addEventListener("click", () => {
   btnDarkMode()
 })
+
+// Preciso ter uma variavel que seja o controle do modo escuro, para ser armazenado no localstorage para
+// identificar no site inteiro quando estiver no modo escuro.
