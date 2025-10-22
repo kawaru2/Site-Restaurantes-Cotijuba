@@ -125,6 +125,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
+  text-indent: 0.3em;
 }
 
 /*Restaurantes*/
@@ -144,6 +145,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  
 }
 .card {
   background: #fff;
@@ -244,6 +246,7 @@ footer {
 .darkModeBorder {
   border: #2A2A2A;
 }
+
 
 @media (max-width: 600px) {
   .hero h1 {

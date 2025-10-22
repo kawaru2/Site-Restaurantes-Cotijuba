@@ -8,8 +8,8 @@ body {
 
 header {
   position: relative;
-  height: 220px;
-  background: url("../imagem/praia.jpg") center/cover
+  height: 400px;
+  background: url("../imagem/logo5.jpg") center/cover
     no-repeat;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ iframe {
   padding: 0.8rem;
   border-radius: 8px;
   margin-bottom: 0.8rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .menu-item h3 {
@@ -124,3 +124,51 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+.nova {
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #4abd89;
+  width: 9em;
+  text-align: center;
+
+}
+
+a.escolha {
+  display: inline-block ;
+  background-color: #a248df;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  width: 8em ;
+  height: 1.5em;
+
+  border-radius: 5px;
+  gap: 5px;
+  margin: 5px;
+}
+
+
+
+
+ #fotos {
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+
+  #fotos img {
+    width: 20em;
+    height: 20em;
+    border-radius: 20px;
+
+  
+  }
+  
+
+  
+
